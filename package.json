@@ -1,0 +1,22 @@
+{
+  "name": "reso-certification-etl",
+  "version": "1.0.0",
+  "description": "ETL Packages for RESO Certification",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RESOStandards/reso-certification-etl.git"
+  },
+  "author": "josh@reso.org (github: @darnjo)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RESOStandards/reso-certification-etl/issues"
+  },
+  "homepage": "https://github.com/RESOStandards/reso-certification-etl#readme",
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
+}
