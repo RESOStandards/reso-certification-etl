@@ -1,1 +1,1 @@
-console.log("TODO: Migrate ETL tests from reso-certification!!");
+console.log('TODO: Migrate ETL tests from reso-certification!!');
