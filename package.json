@@ -6,10 +6,6 @@
   "scripts": {
     "test": "mocha"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RESOStandards/reso-certification-etl.git"
-  },
   "author": "josh@reso.org (github: @darnjo)",
   "license": "MIT",
   "bugs": {
