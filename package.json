@@ -1,5 +1,5 @@
 {
-  "name": "reso-certification-etl",
+  "name": "@reso/reso-certification-etl",
   "version": "1.0.0",
   "description": "ETL Packages for RESO Certification",
   "main": "index.js",
