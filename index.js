@@ -1,5 +1,8 @@
+const { processLookupResourceMetadata, processLookupResourceMetadataFiles }  = require('./lib/process-lookup-resource-metadata');
+
 module.exports = {
-  processLookupResourceMetadata: require('./lib/process-lookup-resource-metadata'),
+  processLookupResourceMetadata,
+  processLookupResourceMetadataFiles,
   processDataAvailability: require('./lib/process-data-availability'),
   processMetadata: require('./lib/process-metadata'),
   common: require('./lib/common'),
