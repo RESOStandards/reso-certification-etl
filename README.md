@@ -1,11 +1,11 @@
-# RESO Certification Common Library
+# RESO Certification ETL Library
 NodeJS Package Containing RESO Certification ETL utilities.
 
 # Installation
 To install from GitHub using npm:
 
 ```
-npm i RESOStandards/reso-certification-common
+npm i RESOStandards/reso-certification-etl
 ```
 
 To install from Github via yarn:
