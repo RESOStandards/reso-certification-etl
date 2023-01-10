@@ -2,6 +2,118 @@
   "description": "RESO Data Dictionary Metadata Report",
   "version": "1.7",
   "generatedOn": "2021-12-13T01:44:51.102Z",
+  "resources": [
+    {
+      "resourceName": "Property",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/Property+Resource",
+      "payloads": ["idx"]
+    },
+    {
+      "resourceName": "Member",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/Member+Resource",
+      "payloads": ["idx"]
+    },
+    {
+      "resourceName": "Office",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/Office+Resource",
+      "payloads": ["idx"]
+    },
+    {
+      "resourceName": "Contacts",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/Contacts+Resource"
+    },
+    {
+      "resourceName": "Media",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/Media+Resource",
+      "payloads": ["idx"]
+    },
+    {
+      "resourceName": "HistoryTransactional",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/HistoryTransactional+Resource"
+    },
+    {
+      "resourceName": "ContactListings",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/ContactListings+Resource"
+    },
+    {
+      "resourceName": "InternetTracking",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/InternetTracking+Resource"
+    },
+    {
+      "resourceName": "SavedSearch",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/SavedSearch+Resource"
+    },
+    {
+      "resourceName": "OpenHouse",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/OpenHouse+Resource",
+      "payloads": ["idx"]
+    },
+    {
+      "resourceName": "Prospecting",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/Prospecting+Resource"
+    },
+    {
+      "resourceName": "Queue",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/Queue+Resource"
+    },
+    {
+      "resourceName": "Rules",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/Rules+Resource"
+    },
+    {
+      "resourceName": "Teams",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/Teams+Resource"
+    },
+    {
+      "resourceName": "Showing",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/Showing+Resource"
+    },
+    {
+      "resourceName": "TeamMembers",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/TeamMembers+Resource"
+    },
+    {
+      "resourceName": "OUID",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/OUID+Resource"
+    },
+    {
+      "resourceName": "ContactListingNotes",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/ContactListingNotes+Resource"
+    },
+    {
+      "resourceName": "OtherPhone",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/OtherPhone+Resource"
+    },
+    {
+      "resourceName": "PropertyGreenVerification",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/PropertyGreenVerification+Resource",
+      "payloads": ["idx"]
+    },
+    {
+      "resourceName": "PropertyPowerProduction",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/PropertyPowerProduction+Resource"
+    },
+    {
+      "resourceName": "PropertyRooms",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/PropertyRooms+Resource"
+    },
+    {
+      "resourceName": "PropertyUnitTypes",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/PropertyUnitTypes+Resource"
+    },
+    {
+      "resourceName": "SocialMedia",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/SocialMedia+Resource"
+    },
+    {
+      "resourceName": "Field",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/Field+Resource"
+    },
+    {
+      "resourceName": "Lookup",
+      "wikiPageURL": "https://ddwiki.reso.org/display/DDW17/Lookup+Resource"
+    }
+  ],
   "fields": [
     {
       "resourceName": "Property",
