@@ -1,19 +1,17 @@
-name: ci-test
+name: publish-aws-lambda-layer
 on:
   push:
     branches:
       - 17-publish-etl-package-to-lambda-layer
 jobs:
-  test:
+  publish:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - name: AWS Lambda Layer Publish
-        uses: mohit-s96/aws-lambda-publishlayer@79ac14ad142c878a772c67cd92d50e47e0c02769
+        uses: mohit-s96/aws-lambda-publishlayer@770ca73ee40a39c36d9ea53d54af6a4fceaa9be8
         env:
           AWS_REGION: ${{ secrets.AWS_REGION }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        with:
-          layer_name: ETLLayer
-          zip_file: path/to/file.zip
+          AWS_LAYER_NAME: ${{ secrets.AWS_LAYER_NAME }}
