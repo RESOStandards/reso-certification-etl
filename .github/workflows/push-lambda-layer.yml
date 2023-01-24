@@ -9,7 +9,7 @@ jobs:
     timeout-minutes: 5
     steps:
       - name: AWS Lambda Layer Publish
-        uses: mohit-s96/aws-lambda-publishlayer@770ca73ee40a39c36d9ea53d54af6a4fceaa9be8
+        uses: mohit-s96/aws-lambda-publishlayer@27317968cb0a6e9e8f132db439144dfff8e72cc5
         env:
           AWS_REGION: ${{ secrets.AWS_REGION }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
