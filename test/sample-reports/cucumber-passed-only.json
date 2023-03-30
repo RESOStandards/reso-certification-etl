@@ -1,0 +1,336 @@
+[
+  {
+    "line": 7,
+    "elements": [
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": { "status": "passed" },
+            "line": 10,
+            "name": "a RESOScript file is provided",
+            "match": {
+              "location": "org.reso.certification.stepdefs.DataDictionary.aRESOScriptFileIsProvided()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": { "status": "passed" },
+            "line": 11,
+            "name": "Client Settings and Parameters can be read from the RESOScript",
+            "match": {
+              "location": "org.reso.certification.stepdefs.DataDictionary.clientSettingsAndParametersCanBeReadFromTheRESOScript()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": { "status": "passed" },
+            "line": 12,
+            "name": "a test container was successfully created from the given RESOScript file",
+            "match": {
+              "location": "org.reso.certification.stepdefs.DataDictionary.aTestContainerWasSuccessfullyCreatedFromTheGivenRESOScriptFile()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": { "duration": 1000000, "status": "passed" },
+            "line": 13,
+            "name": "the test container uses an Authorization Code or Client Credentials for authentication",
+            "match": {
+              "location": "org.reso.certification.stepdefs.DataDictionary.theTestContainerUsesAnAuthorizationCodeOrClientCredentialsForAuthentication()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": { "duration": 1701000000, "status": "passed" },
+            "line": 14,
+            "name": "valid metadata were retrieved from the server",
+            "match": {
+              "location": "org.reso.certification.stepdefs.DataDictionary.validMetadataWereRetrievedFromTheServer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": ["Found Lookup Resource!"],
+            "result": { "duration": 2000000, "status": "passed" },
+            "line": 15,
+            "name": "the \"Lookup\" Resource exists in the metadata",
+            "match": {
+              "arguments": [{ "val": "\"Lookup\"", "offset": 4 }],
+              "location": "org.reso.certification.stepdefs.LookupResource.theResourceExistsInTheMetadata(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": { "duration": 4418000000, "status": "passed" },
+            "line": 16,
+            "name": "valid data is replicated from the \"Lookup\" Resource",
+            "match": {
+              "arguments": [{ "val": "\"Lookup\"", "offset": 34 }],
+              "location": "org.reso.certification.stepdefs.LookupResource.validDataIsReplicatedFromTheResource(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-23T21:28:35.064Z",
+        "before": [
+          {
+            "result": { "duration": 65000000, "status": "passed" },
+            "match": {
+              "location": "org.reso.certification.stepdefs.WebAPIServerCore.beforeStep(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": { "duration": 3000000, "status": "passed" },
+            "match": {
+              "location": "org.reso.certification.stepdefs.DataDictionary.beforeStep(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": { "duration": 1000000, "status": "passed" },
+            "match": {
+              "location": "org.reso.certification.stepdefs.IdxPayload.beforeStep(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": { "duration": 1000000, "status": "passed" },
+            "match": {
+              "location": "org.reso.certification.stepdefs.LookupResource.beforeStep(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": { "duration": 2000000, "status": "passed" },
+            "match": {
+              "location": "org.reso.certification.stepdefs.DataAvailability.beforeStep(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Ensure That Required Lookup Resource Fields Are Present in Server Metadata",
+        "description": "",
+        "id": "lookup-acceptance-tests-(rcp-032);ensure-that-required-lookup-resource-fields-are-present-in-server-metadata",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": { "duration": 2747000000, "status": "passed" },
+            "line": 20,
+            "name": "that metadata have been retrieved from the server and validated",
+            "match": {
+              "location": "org.reso.certification.stepdefs.DataAvailability.thatValidMetadataHaveBeenRetrievedFromTheServerAndValidated()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": ["Found Lookup Resource!"],
+            "result": { "duration": 1000000, "status": "passed" },
+            "line": 21,
+            "name": "the \"Lookup\" Resource exists in the metadata",
+            "match": {
+              "arguments": [{ "val": "\"Lookup\"", "offset": 4 }],
+              "location": "org.reso.certification.stepdefs.LookupResource.theResourceExistsInTheMetadata(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "Ensuring mandatory fields 'LookupKey, LookupName, LookupValue, ModificationTimestamp' are present in server metadata",
+              "Ensuring mandatory fields 'LookupKey, LookupName, LookupValue, ModificationTimestamp' are present in Lookup Resource data",
+              "All mandatory fields present!"
+            ],
+            "result": { "duration": 10000000, "status": "passed" },
+            "line": 22,
+            "name": "\"Lookup\" Resource data and metadata MUST contain the following fields",
+            "match": {
+              "arguments": [{ "val": "\"Lookup\"", "offset": 0 }],
+              "location": "org.reso.certification.stepdefs.LookupResource.resourceDataAndMetadataMUSTContainTheFollowingFields(java.lang.String,java.util.List<java.lang.String>)"
+            },
+            "rows": [
+              { "cells": ["LookupKey"] },
+              { "cells": ["LookupName"] },
+              { "cells": ["LookupValue"] },
+              { "cells": ["ModificationTimestamp"] }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [{ "name": "@dd-1.7" }, { "name": "@rcp-032" }, { "name": "@lookup-resource" }]
+      },
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": { "status": "passed" },
+            "line": 10,
+            "name": "a RESOScript file is provided",
+            "match": {
+              "location": "org.reso.certification.stepdefs.DataDictionary.aRESOScriptFileIsProvided()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": { "status": "passed" },
+            "line": 11,
+            "name": "Client Settings and Parameters can be read from the RESOScript",
+            "match": {
+              "location": "org.reso.certification.stepdefs.DataDictionary.clientSettingsAndParametersCanBeReadFromTheRESOScript()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": { "status": "passed" },
+            "line": 12,
+            "name": "a test container was successfully created from the given RESOScript file",
+            "match": {
+              "location": "org.reso.certification.stepdefs.DataDictionary.aTestContainerWasSuccessfullyCreatedFromTheGivenRESOScriptFile()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": { "status": "passed" },
+            "line": 13,
+            "name": "the test container uses an Authorization Code or Client Credentials for authentication",
+            "match": {
+              "location": "org.reso.certification.stepdefs.DataDictionary.theTestContainerUsesAnAuthorizationCodeOrClientCredentialsForAuthentication()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": { "status": "passed" },
+            "line": 14,
+            "name": "valid metadata were retrieved from the server",
+            "match": {
+              "location": "org.reso.certification.stepdefs.DataDictionary.validMetadataWereRetrievedFromTheServer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": ["Found Lookup Resource!"],
+            "result": { "duration": 1000000, "status": "passed" },
+            "line": 15,
+            "name": "the \"Lookup\" Resource exists in the metadata",
+            "match": {
+              "arguments": [{ "val": "\"Lookup\"", "offset": 4 }],
+              "location": "org.reso.certification.stepdefs.LookupResource.theResourceExistsInTheMetadata(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": { "status": "passed" },
+            "line": 16,
+            "name": "valid data is replicated from the \"Lookup\" Resource",
+            "match": {
+              "arguments": [{ "val": "\"Lookup\"", "offset": 34 }],
+              "location": "org.reso.certification.stepdefs.LookupResource.validDataIsReplicatedFromTheResource(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-23T21:28:44.079Z",
+        "before": [
+          {
+            "result": { "duration": 3000000, "status": "passed" },
+            "match": {
+              "location": "org.reso.certification.stepdefs.WebAPIServerCore.beforeStep(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": { "status": "passed" },
+            "match": {
+              "location": "org.reso.certification.stepdefs.DataDictionary.beforeStep(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": { "status": "passed" },
+            "match": {
+              "location": "org.reso.certification.stepdefs.IdxPayload.beforeStep(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": { "status": "passed" },
+            "match": {
+              "location": "org.reso.certification.stepdefs.LookupResource.beforeStep(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": { "status": "passed" },
+            "match": {
+              "location": "org.reso.certification.stepdefs.DataAvailability.beforeStep(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "Check Required Annotations and LookupName Data",
+        "description": "",
+        "id": "lookup-acceptance-tests-(rcp-032);check-required-annotations-and-lookupname-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": { "status": "passed" },
+            "line": 40,
+            "name": "that metadata have been retrieved from the server and validated",
+            "match": {
+              "location": "org.reso.certification.stepdefs.DataAvailability.thatValidMetadataHaveBeenRetrievedFromTheServerAndValidated()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": ["Found Lookup Resource!"],
+            "result": { "status": "passed" },
+            "line": 41,
+            "name": "the \"Lookup\" Resource exists in the metadata",
+            "match": {
+              "arguments": [{ "val": "\"Lookup\"", "offset": 4 }],
+              "location": "org.reso.certification.stepdefs.LookupResource.theResourceExistsInTheMetadata(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": { "duration": 7000000, "status": "passed" },
+            "line": 42,
+            "name": "RESO Lookups using String or String Collection data types MUST have the annotation \"RESO.OData.Metadata.LookupName\"",
+            "match": {
+              "arguments": [{ "val": "\"RESO.OData.Metadata.LookupName\"", "offset": 83 }],
+              "location": "org.reso.certification.stepdefs.LookupResource.resoLookupsUsingStringOrStringCollectionDataTypesMUSTHaveTheAnnotation(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "Found all annotated LookupName elements in the Lookup data. Unique count: 113",
+              "LookupNames: \nPowerProductionType, Fencing, GreenWaterConservation, ResourceName, CoListAgentDesignation,\nOfficeBranchType, GreenSustainability, OpenHouseStatus, StreetSuffix, AreaSource, BuyerAgentDesignation,\nListingService, LotSizeUnits, WaterSource, LaundryFeatures, Permission, Flooring, MediaType,\nDoorFeatures, WaterfrontFeatures, Status, AreaUnits, Cooling, ExteriorFeatures, SecurityFeatures, Skirt,\nCoBuyerAgentDesignation, PetsAllowed, StreetDirection, Country, GreenBuildingVerificationType2,\nPostalCity, OccupantType, OtherStructures, AssociationAmenities, BodyType, ListAgentDesignation,\nRoomType, MediaCategory, SpaFeatures, RoadSurfaceType, CompBacGrossNet, ParkingFeatures,\nGreenIndoorAirQuality, PoolFeatures, Sewer, Appliances, Heating, MLSAreaMajor, StructureType,\nBuyerFinancing, GreenLocation, Basement, CurrentUse, PricePer, BusinessType, PatioAndPorchFeatures,\nCountyOrParish, PropertyType, OfficeStatus, RoadFrontageType, ListingAgreement, Utilities,\nGreenEnergyGeneration, ChangeType, FireplaceFeatures, WindowFeatures, FeeFrequency,\nSpecialListingConditions, CommunityFeatures, ImageSizeDescription, LeaseTerm, GreenEnergyEfficient,\nMemberDesignation, StateOrProvince, CommonWalls, RentIncludes, City, GreenBuildingVerificationType,\nAssociationFeeIncludes, UnitTypeType, AccessibilityFeatures, ShowingContactType, Vegetation,\nMasterBedroomLevel, CompensationType, District, BuildingFeatures, DirectionFaces, Concessions,\nLotFeatures, PossibleUse, StandardStatus, OpenHouseType, ConstructionMaterials, School, Roof,\nPropertyCondition, MemberStateOrProvince, AOR, ListingTerms, Electric, ArchitecturalStyle,\nFoundationDetails, Attended, View, PropertySubType, YearBuiltSource, MemberType, Levels, OtherEquipment,\nMemberStatus, InteriorFeatures"
+            ],
+            "result": { "duration": 13000000, "status": "passed" },
+            "line": 43,
+            "name": "fields with the annotation term \"RESO.OData.Metadata.LookupName\" MUST have a LookupName in the Lookup Resource",
+            "match": {
+              "arguments": [{ "val": "\"RESO.OData.Metadata.LookupName\"", "offset": 32 }],
+              "location": "org.reso.certification.stepdefs.LookupResource.fieldsWithTheAnnotationTermMUSTHaveALookupNameInTheLookupResource(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [{ "name": "@dd-1.7" }, { "name": "@rcp-032" }, { "name": "@lookup-resource" }]
+      }
+    ],
+    "name": "Lookup Acceptance Tests (RCP-032)",
+    "description": "",
+    "id": "lookup-acceptance-tests-(rcp-032)",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/org/reso/certification/features/data-dictionary/v1-7-0/additional-tests/lookup-resource-tests.feature",
+    "tags": []
+  }
+]
