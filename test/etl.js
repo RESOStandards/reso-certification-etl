@@ -82,17 +82,17 @@ describe('parseErrorLog', function () {
       {
         testStep: 'DataAvailability',
         message:
-          'Request to https://retsapi.raprets.com/2/bari/RESO/OData/Resource?$filter=DateTimeStamp lt 2022-12-19T22:20:02.461Z&$orderby=DateTimeStamp desc&$top=100 failed! No response code was provided. Check commander.log for any errors...'
+          'Request to https://test.reso.org/2/bari/RESO/OData/Resource?$filter=DateTimeStamp lt 2022-12-19T22:20:02.461Z&$orderby=DateTimeStamp desc&$top=100 failed! No response code was provided. Check commander.log for any errors...'
       },
       {
         testStep: 'DataAvailability',
         message:
-          'Request to https://retsapi.raprets.com/2/bari/RESO/OData/History?$filter=ModificationTimestamp lt 2022-12-19T22:21:05.499Z&$orderby=ModificationTimestamp desc&$top=100 failed! No response code was provided. Check commander.log for any errors...'
+          'Request to https://test.reso.org/2/bari/RESO/OData/History?$filter=ModificationTimestamp lt 2022-12-19T22:21:05.499Z&$orderby=ModificationTimestamp desc&$top=100 failed! No response code was provided. Check commander.log for any errors...'
       },
       {
         testStep: 'DataAvailability',
         message:
-          'Request to https://retsapi.raprets.com/2/bari/RESO/OData/Offices?$filter=ModificationTimestamp lt 2022-12-19T22:23:08.573Z&$orderby=ModificationTimestamp desc&$top=100 failed! No response code was provided. Check commander.log for any errors...'
+          'Request to https://test.reso.org/2/bari/RESO/OData/Offices?$filter=ModificationTimestamp lt 2022-12-19T22:23:08.573Z&$orderby=ModificationTimestamp desc&$top=100 failed! No response code was provided. Check commander.log for any errors...'
       },
       {
         testStep: 'PayloadSampleReport',
