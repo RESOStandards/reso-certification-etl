@@ -41,7 +41,7 @@ describe('processCucumberJson', function () {
     assert.deepStrictEqual(result, expected);
   });
 
-  it('should find an error when the raw report has an error and passed steps', async function () {
+  it('should find an error when the raw report has both error and passed steps', async function () {
     const expected = {
       cucumberReport: [
         {
