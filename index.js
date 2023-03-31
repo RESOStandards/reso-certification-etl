@@ -7,7 +7,7 @@ const getReferenceMetadata = (version = '1.7') => {
   try {
     return require(`./lib/references/dd-${version}/metadata-report.json`);
   } catch (err) {
-    console.error("Cannot load reference metadata. ERROR: " + err);
+    console.error(`Cannot load reference metadata for version '${version}'!`);
     return null;
   }
 };
