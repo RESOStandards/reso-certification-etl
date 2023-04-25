@@ -1,0 +1,2 @@
+[2022-10-06 21:13:40.566] [ERROR] [LookupResource] - ERROR: The following fields are missing the required 'RESO.OData.Metadata.LookupName' annotation: 
+CountyOrParish, StreetDirSuffix, City, StateOrProvince, StreetDirPrefix, StreetSuffix

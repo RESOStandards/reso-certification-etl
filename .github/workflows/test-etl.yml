@@ -1,0 +1,20 @@
+name: ETL functions CI
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  test-etl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set up Node v18
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+      - name: Install dependencies
+        run: npm ci
+      - name: Run ETL tests
+        run: npm run test
