@@ -8,61 +8,31 @@
       "resourceName": "Office",
       "fieldName": "OfficeStateOrProvince",
       "frequency": 1000,
-      "availability": 1,
-      "eqZero": false,
-      "gtZero": true,
-      "gte25": true,
-      "gte50": true,
-      "gte75": true,
-      "eq100": true
+      "availability": 1
     },
     {
       "resourceName": "Property",
       "fieldName": "AccessibilityFeatures",
       "frequency": 2000,
-      "availability": 2,
-      "eqZero": false,
-      "gtZero": true,
-      "gte25": true,
-      "gte50": true,
-      "gte75": true,
-      "eq100": false
+      "availability": 2
     },
     {
       "resourceName": "Property",
       "fieldName": "StandardStatus",
       "frequency": 1000,
-      "availability": 1,
-      "eqZero": false,
-      "gtZero": true,
-      "gte25": true,
-      "gte50": true,
-      "gte75": true,
-      "eq100": true
+      "availability": 1
     },
     {
       "resourceName": "Property",
       "fieldName": "ListPrice",
       "frequency": 999,
-      "availability": 0.999,
-      "eqZero": false,
-      "gtZero": true,
-      "gte25": true,
-      "gte50": true,
-      "gte75": true,
-      "eq100": false
+      "availability": 0.999
     },
     {
       "resourceName": "Property",
       "fieldName": "CustomLookupField123",
       "frequency": 500,
-      "availability": 0.5,
-      "eqZero": false,
-      "gtZero": true,
-      "gte25": true,
-      "gte50": true,
-      "gte75": false,
-      "eq100": false
+      "availability": 0.5
     }
   ],
   "lookups": [
@@ -77,91 +47,49 @@
       "fieldName": "OfficeStateOrProvince",
       "lookupValue": "CA",
       "frequency": 900,
-      "availability": 0.9,
-      "eqZero": false,
-      "gtZero": true,
-      "gte25": true,
-      "gte50": true,
-      "gte75": true,
-      "eq100": false
+      "availability": 0.9
     },
     {
       "resourceName": "Office",
       "fieldName": "OfficeStateOrProvince",
       "lookupValue": "HI",
       "frequency": 100,
-      "availability": 0.1,
-      "eqZero": false,
-      "gtZero": true,
-      "gte25": false,
-      "gte50": false,
-      "gte75": false,
-      "eq100": false
+      "availability": 0.1
     },
     {
       "resourceName": "Property",
       "fieldName": "AccessibilityFeatures",
       "lookupValue": "Accessible Approach with Ramp",
       "frequency": 100,
-      "availability": 0.1,
-      "eqZero": false,
-      "gtZero": true,
-      "gte25": false,
-      "gte50": false,
-      "gte75": false,
-      "eq100": false
+      "availability": 0.1
     },
     {
       "resourceName": "Property",
       "fieldName": "AccessibilityFeatures",
       "lookupValue": "ReinforcedFloors",
       "frequency": 100,
-      "availability": 0.1,
-      "eqZero": false,
-      "gtZero": true,
-      "gte25": false,
-      "gte50": false,
-      "gte75": false,
-      "eq100": false
+      "availability": 0.1
     },
     {
       "resourceName": "Property",
       "fieldName": "StandardStatus",
       "lookupValue": "Active Under Contract",
       "frequency": 900,
-      "availability": 0.9,
-      "eqZero": false,
-      "gtZero": true,
-      "gte25": true,
-      "gte50": true,
-      "gte75": true,
-      "eq100": false
+      "availability": 0.9
     },
     {
       "resourceName": "Property",
       "fieldName": "StandardStatus",
       "lookupValue": "Pending",
       "frequency": 100,
-      "availability": 0.1,
-      "eqZero": false,
-      "gtZero": true,
-      "gte25": false,
-      "gte50": false,
-      "gte75": false,
-      "eq100": false
+      "availability": 0.1
     },
     {
       "resourceName": "Property",
       "fieldName": "CustomLookupField123",
       "lookupValue": "PENDING",
       "frequency": 10,
-      "availability": 0.01,
-      "eqZero": false,
-      "gtZero": true,
-      "gte25": false,
-      "gte50": false,
-      "gte75": false,
-      "eq100": false
+      "availability": 0.01
     }
   ],
   "resources": [

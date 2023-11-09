@@ -56,10 +56,9 @@
     },
     {
       "lookupName": "PropertyEnums.AccessibilityFeatures",
-      "lookupValue": "Accessible Approach with Ramp",
+      "lookupValue": "_23923049",
       "type": "Edm.Int32",
-      "standardRESO": true,
-      "standardDisplayName": "Accessible Approach with Ramp"
+      "standardRESO": false
     },
     {
       "lookupName": "PropertyEnums.AccessibilityFeatures",
@@ -83,10 +82,9 @@
     },
     {
       "lookupName": "PropertyEnums.Statuses",
-      "lookupValue": "Active Under Contract",
+      "lookupValue": "ACTIVE_UC",
       "type": "Edm.Int32",
-      "standardRESO": true,
-      "standardDisplayName": "Active Under Contract"
+      "standardRESO": false
     },
     {
       "lookupName": "CustomLookups.LookupField123",
@@ -101,8 +99,8 @@
   "standardResourcesCount": 2,
   "localResourcesCount": 0,
   "totalResourcesCount": 2,
-  "standardLookupsCount": 6,
-  "localLookupsCount": 2,
+  "standardLookupsCount": 4,
+  "localLookupsCount": 4,
   "totalLookupsCount": 8,
   "iDXFieldsCount": 4,
   "iDXResourcesCount": 2,
@@ -114,7 +112,7 @@
     },
     "Property": {
       "fields": { "total": 4, "reso": 3, "idx": 3, "local": 1 },
-      "lookups": { "total": 6, "reso": 4, "idx": 2, "local": 2 }
+      "lookups": { "total": 6, "reso": 2, "idx": 1, "local": 4 }
     }
   }
 }
