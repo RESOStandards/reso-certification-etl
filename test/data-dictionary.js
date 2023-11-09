@@ -5,7 +5,7 @@ const {
 } = require('..');
 const assert = require('assert');
 
-describe('process-metadata', function () {
+describe('processMetadata', function () {
   it('should match the expected data', () => {
     const processedReport = processMetadataReport(metadataReport);
     assert.deepStrictEqual(JSON.parse(JSON.stringify(processedReport)), expectedReport);
