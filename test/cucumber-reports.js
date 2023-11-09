@@ -1,15 +1,15 @@
 const fs = require('fs');
 const { processCucumberJson: processCucumber } = require('../index');
 const { parseErrorLog, processCucumberJson } = processCucumber;
-const passedOnlyReport = require('./sample-reports/cucumber-passed-only.json');
-const errorOnlyReport = require('./sample-reports/cucumber-error-only.json');
-const errorAndPassed = require('./sample-reports/cucumber-passed-error.json');
+const passedOnlyReport = require('./sample-cucumber-reports/cucumber-passed-only.json');
+const errorOnlyReport = require('./sample-cucumber-reports/cucumber-error-only.json');
+const errorAndPassed = require('./sample-cucumber-reports/cucumber-passed-error.json');
 // Import the assert library
 const assert = require('assert');
 
-const errorLog = fs.readFileSync(`${__dirname}/sample-reports/error.log.txt`).toString();
+const errorLog = fs.readFileSync(`${__dirname}/sample-cucumber-reports/error.log.txt`).toString();
 const errorLogMultiline = fs
-  .readFileSync(`${__dirname}/sample-reports/error.multiline.log.txt`)
+  .readFileSync(`${__dirname}/sample-cucumber-reports/error.multiline.log.txt`)
   .toString();
 
 describe('processCucumberJson', function () {
