@@ -8,7 +8,7 @@
     "prepare": "husky install"
   },
   "author": "josh@reso.org (github: @darnjo)",
-  "license": "MIT",
+  "license": "See LICENSE in ./LICENSE",
   "bugs": {
     "url": "https://github.com/RESOStandards/reso-certification-etl/issues"
   },
