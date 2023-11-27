@@ -31,7 +31,22 @@ const daReport = {
       dateLow: '2021-03-15T10:12:32.319Z',
       dateHigh: '2022-03-15T10:12:32.319Z',
       keyFields: ['ListingKey'],
-      postalCodes: ['12345', '67890']
+      postalCodes: ['12345', '67890'],
+      expansions: [
+        {
+          resourceName: 'Media',
+          recordCount: 1000,
+          numRecordsFetched: 1000,
+          numSamples: 10,
+          pageSize: 100,
+          averageResponseBytes: 100000,
+          averageResponseTimeMillis: 1500,
+          dateField: 'ModificationTimestamp',
+          dateLow: '2021-03-15T10:12:32.319Z',
+          dateHigh: '2022-03-15T10:12:32.319Z',
+          keyFields: ['MemberKey']
+        }
+      ]
     }
   ],
   fields: [
@@ -59,6 +74,24 @@ const daReport = {
       resourceName: 'Property',
       fieldName: 'CustomLookupField123',
       frequency: 500
+    },
+    {
+      resourceName: 'Media',
+      fieldName: 'ListOfficeKey',
+      frequency: 1000,
+      parentResourceName: 'Property'
+    },
+    {
+      resourceName: 'Media',
+      fieldName: 'ResourceRecordKey',
+      frequency: 500,
+      parentResourceName: 'Property'
+    },
+    {
+      resourceName: 'Media',
+      fieldName: 'MediaModificationTimestamp',
+      frequency: 2000,
+      parentResourceName: 'Property'
     }
   ],
   lookups: [
