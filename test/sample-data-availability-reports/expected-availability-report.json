@@ -33,6 +33,27 @@
       "fieldName": "CustomLookupField123",
       "frequency": 500,
       "availability": 0.5
+    },
+    {
+      "resourceName": "Media",
+      "fieldName": "ListOfficeKey",
+      "availability": 1,
+      "parentResourceName": "Property",
+      "frequency": 1000
+    },
+    {
+      "resourceName": "Media",
+      "fieldName": "ResourceRecordKey",
+      "availability": 0.5,
+      "parentResourceName": "Property",
+      "frequency": 500
+    },
+    {
+      "resourceName": "Media",
+      "fieldName": "MediaModificationTimestamp",
+      "availability": 2,
+      "parentResourceName": "Property",
+      "frequency": 2000
     }
   ],
   "lookups": [
@@ -118,15 +139,30 @@
       "dateLow": "2021-03-15T10:12:32.319Z",
       "dateHigh": "2022-03-15T10:12:32.319Z",
       "keyFields": ["ListingKey"],
-      "postalCodes": ["12345", "67890"]
+      "postalCodes": ["12345", "67890"],
+      "expansions": [
+        {
+          "resourceName": "Media",
+          "recordCount": 1000,
+          "numRecordsFetched": 1000,
+          "numSamples": 10,
+          "pageSize": 100,
+          "averageResponseBytes": 100000,
+          "averageResponseTimeMillis": 1500,
+          "dateField": "ModificationTimestamp",
+          "dateLow": "2021-03-15T10:12:32.319Z",
+          "dateHigh": "2022-03-15T10:12:32.319Z",
+          "keyFields": ["MemberKey"]
+        }
+      ]
     }
   ],
   "availability": {
     "fields": {
-      "total": { "eqZero": 0, "gtZero": 5, "gte25": 5, "gte50": 5, "gte75": 4, "eq100": 2 },
-      "reso": { "eqZero": 0, "gtZero": 4, "gte25": 4, "gte50": 4, "gte75": 4, "eq100": 2 },
-      "idx": { "eqZero": 0, "gtZero": 4, "gte25": 4, "gte50": 4, "gte75": 4, "eq100": 2 },
-      "local": { "eqZero": 0, "gtZero": 1, "gte25": 1, "gte50": 1, "gte75": 0, "eq100": 0 }
+      "total": { "eqZero": 0, "gtZero": 8, "gte25": 8, "gte50": 8, "gte75": 6, "eq100": 3 },
+      "reso": { "eqZero": 0, "gtZero": 6, "gte25": 6, "gte50": 6, "gte75": 5, "eq100": 2 },
+      "idx": { "eqZero": 0, "gtZero": 6, "gte25": 6, "gte50": 6, "gte75": 5, "eq100": 2 },
+      "local": { "eqZero": 0, "gtZero": 2, "gte25": 2, "gte50": 2, "gte75": 1, "eq100": 1 }
     },
     "lookups": {
       "total": { "eqZero": 0, "gtZero": 7, "gte25": 2, "gte50": 2, "gte75": 2, "eq100": 0 },
@@ -146,6 +182,36 @@
           "reso": 0.30000000000000004,
           "idx": 0.30000000000000004,
           "local": 0.01
+        },
+        "expansions": {
+          "Media": {
+            "fields": {
+              "total": 1.1666666666666667,
+              "reso": 1.25,
+              "local": 1,
+              "idx": 1.25
+            },
+            "lookups": {
+              "total": 0,
+              "reso": 0,
+              "idx": 0,
+              "local": 0
+            }
+          }
+        }
+      },
+      "Media": {
+        "fields": {
+          "total": 0,
+          "reso": 0,
+          "idx": 0,
+          "local": 0
+        },
+        "lookups": {
+          "total": 0,
+          "reso": 0,
+          "idx": 0,
+          "local": 0
         }
       }
     },
@@ -176,6 +242,148 @@
           "reso": { "eqZero": 0, "gtZero": 4, "gte25": 1, "gte50": 1, "gte75": 1, "eq100": 0 },
           "idx": { "eqZero": 0, "gtZero": 4, "gte25": 1, "gte50": 1, "gte75": 1, "eq100": 0 },
           "local": { "eqZero": 0, "gtZero": 1, "gte25": 0, "gte50": 0, "gte75": 0, "eq100": 0 }
+        },
+        "expansions": {
+          "Media": {
+            "fields": {
+              "total": {
+                "eqZero": 0,
+                "gtZero": 3,
+                "gte25": 3,
+                "gte50": 3,
+                "gte75": 2,
+                "eq100": 1
+              },
+              "reso": {
+                "eqZero": 0,
+                "gtZero": 2,
+                "gte25": 2,
+                "gte50": 2,
+                "gte75": 1,
+                "eq100": 0
+              },
+              "idx": {
+                "eqZero": 0,
+                "gtZero": 2,
+                "gte25": 2,
+                "gte50": 2,
+                "gte75": 1,
+                "eq100": 0
+              },
+              "local": {
+                "eqZero": 0,
+                "gtZero": 1,
+                "gte25": 1,
+                "gte50": 1,
+                "gte75": 1,
+                "eq100": 1
+              }
+            },
+            "lookups": {
+              "total": {
+                "eqZero": 0,
+                "gtZero": 0,
+                "gte25": 0,
+                "gte50": 0,
+                "gte75": 0,
+                "eq100": 0
+              },
+              "reso": {
+                "eqZero": 0,
+                "gtZero": 0,
+                "gte25": 0,
+                "gte50": 0,
+                "gte75": 0,
+                "eq100": 0
+              },
+              "idx": {
+                "eqZero": 0,
+                "gtZero": 0,
+                "gte25": 0,
+                "gte50": 0,
+                "gte75": 0,
+                "eq100": 0
+              },
+              "local": {
+                "eqZero": 0,
+                "gtZero": 0,
+                "gte25": 0,
+                "gte50": 0,
+                "gte75": 0,
+                "eq100": 0
+              }
+            }
+          }
+        }
+      },
+      "Media": {
+        "fields": {
+          "total": {
+            "eqZero": 0,
+            "gtZero": 0,
+            "gte25": 0,
+            "gte50": 0,
+            "gte75": 0,
+            "eq100": 0
+          },
+          "reso": {
+            "eqZero": 0,
+            "gtZero": 0,
+            "gte25": 0,
+            "gte50": 0,
+            "gte75": 0,
+            "eq100": 0
+          },
+          "idx": {
+            "eqZero": 0,
+            "gtZero": 0,
+            "gte25": 0,
+            "gte50": 0,
+            "gte75": 0,
+            "eq100": 0
+          },
+          "local": {
+            "eqZero": 0,
+            "gtZero": 0,
+            "gte25": 0,
+            "gte50": 0,
+            "gte75": 0,
+            "eq100": 0
+          }
+        },
+        "lookups": {
+          "total": {
+            "eqZero": 0,
+            "gtZero": 0,
+            "gte25": 0,
+            "gte50": 0,
+            "gte75": 0,
+            "eq100": 0
+          },
+          "reso": {
+            "eqZero": 0,
+            "gtZero": 0,
+            "gte25": 0,
+            "gte50": 0,
+            "gte75": 0,
+            "eq100": 0
+          },
+          "idx": {
+            "eqZero": 0,
+            "gtZero": 0,
+            "gte25": 0,
+            "gte50": 0,
+            "gte75": 0,
+            "eq100": 0
+          },
+          "local": {
+            "eqZero": 0,
+            "gtZero": 0,
+            "gte25": 0,
+            "gte50": 0,
+            "gte75": 0,
+            "eq100": 0
+          }
         }
       }
     }
