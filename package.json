@@ -4,15 +4,21 @@
   "description": "ETL Packages for RESO Certification",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "prepare": "husky install"
   },
   "author": "josh@reso.org (github: @darnjo)",
-  "license": "MIT",
+  "license": "See LICENSE in ./LICENSE",
   "bugs": {
     "url": "https://github.com/RESOStandards/reso-certification-etl/issues"
   },
   "homepage": "https://github.com/RESOStandards/reso-certification-etl#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "14.0.1",
     "mocha": "^10.0.0"
   }
 }
