@@ -4,8 +4,9 @@
   "description": "ETL Packages for RESO Certification",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
-    "prepare": "husky install"
+    "test": "mocha --timeout 30000",
+    "lint": "eslint . --fix",
+    "precommit": "npm run lint && npm test"
   },
   "author": "josh@reso.org (github: @darnjo)",
   "license": "See LICENSE in ./LICENSE",
@@ -17,8 +18,6 @@
     "node": ">=18.0.0"
   },
   "devDependencies": {
-    "husky": "^8.0.0",
-    "lint-staged": "14.0.1",
     "mocha": "^10.0.0"
   }
 }
