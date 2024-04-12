@@ -37,21 +37,21 @@
     {
       "resourceName": "Media",
       "fieldName": "ListOfficeKey",
-      "availability": 1,
+      "availability": 0.5,
       "parentResourceName": "Property",
       "frequency": 1000
     },
     {
       "resourceName": "Media",
       "fieldName": "ResourceRecordKey",
-      "availability": 0.5,
+      "availability": 0.25,
       "parentResourceName": "Property",
       "frequency": 500
     },
     {
       "resourceName": "Media",
       "fieldName": "MediaModificationTimestamp",
-      "availability": 2,
+      "availability": 1,
       "parentResourceName": "Property",
       "frequency": 2000
     }
@@ -152,17 +152,18 @@
           "dateField": "ModificationTimestamp",
           "dateLow": "2021-03-15T10:12:32.319Z",
           "dateHigh": "2022-03-15T10:12:32.319Z",
-          "keyFields": ["MemberKey"]
+          "keyFields": ["MemberKey"],
+          "numExpandedRecordsFetched": 2000
         }
       ]
     }
   ],
   "availability": {
     "fields": {
-      "total": { "eqZero": 0, "gtZero": 8, "gte25": 8, "gte50": 8, "gte75": 6, "eq100": 3 },
-      "reso": { "eqZero": 0, "gtZero": 6, "gte25": 6, "gte50": 6, "gte75": 5, "eq100": 2 },
-      "idx": { "eqZero": 0, "gtZero": 6, "gte25": 6, "gte50": 6, "gte75": 5, "eq100": 2 },
-      "local": { "eqZero": 0, "gtZero": 2, "gte25": 2, "gte50": 2, "gte75": 1, "eq100": 1 }
+      "total": { "eqZero": 0, "gtZero": 8, "gte25": 8, "gte50": 7, "gte75": 5, "eq100": 3 },
+      "reso": { "eqZero": 0, "gtZero": 6, "gte25": 6, "gte50": 5, "gte75": 5, "eq100": 3 },
+      "idx": { "eqZero": 0, "gtZero": 6, "gte25": 6, "gte50": 5, "gte75": 5, "eq100": 3 },
+      "local": { "eqZero": 0, "gtZero": 2, "gte25": 2, "gte50": 2, "gte75": 0, "eq100": 0 }
     },
     "lookups": {
       "total": { "eqZero": 0, "gtZero": 7, "gte25": 2, "gte50": 2, "gte75": 2, "eq100": 0 },
@@ -186,10 +187,10 @@
         "expansions": {
           "Media": {
             "fields": {
-              "total": 1.1666666666666667,
-              "reso": 1.25,
-              "local": 1,
-              "idx": 1.25
+              "total": 0.5833333333333334,
+              "reso": 0.625,
+              "local": 0.5,
+              "idx": 0.625
             },
             "lookups": {
               "total": 0,
@@ -250,33 +251,33 @@
                 "eqZero": 0,
                 "gtZero": 3,
                 "gte25": 3,
-                "gte50": 3,
-                "gte75": 2,
+                "gte50": 2,
+                "gte75": 1,
                 "eq100": 1
               },
               "reso": {
                 "eqZero": 0,
                 "gtZero": 2,
                 "gte25": 2,
-                "gte50": 2,
+                "gte50": 1,
                 "gte75": 1,
-                "eq100": 0
+                "eq100": 1
               },
               "idx": {
                 "eqZero": 0,
                 "gtZero": 2,
                 "gte25": 2,
-                "gte50": 2,
+                "gte50": 1,
                 "gte75": 1,
-                "eq100": 0
+                "eq100": 1
               },
               "local": {
                 "eqZero": 0,
                 "gtZero": 1,
                 "gte25": 1,
                 "gte50": 1,
-                "gte75": 1,
-                "eq100": 1
+                "gte75": 0,
+                "eq100": 0
               }
             },
             "lookups": {
