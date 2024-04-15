@@ -45,7 +45,8 @@ const daReport = {
           dateLow: '2021-03-15T10:12:32.319Z',
           dateHigh: '2022-03-15T10:12:32.319Z',
           keyFields: ['MemberKey'],
-          numExpandedRecordsFetched: 2000
+          numExpandedRecordsFetched: 2000,
+          numUniqueRecordsFetched: 2000
         }
       ]
     }
