@@ -10,6 +10,7 @@ const daReport = {
       resourceName: 'Office',
       recordCount: 1000,
       numRecordsFetched: 1000,
+      numUniqueRecordsFetched: 1000,
       numSamples: 10,
       pageSize: 100,
       averageResponseBytes: 100000,
@@ -23,6 +24,7 @@ const daReport = {
       resourceName: 'Property',
       recordCount: 1000,
       numRecordsFetched: 1000,
+      numUniqueRecordsFetched: 1000,
       numSamples: 10,
       pageSize: 100,
       averageResponseBytes: 100000,
@@ -44,7 +46,9 @@ const daReport = {
           dateField: 'ModificationTimestamp',
           dateLow: '2021-03-15T10:12:32.319Z',
           dateHigh: '2022-03-15T10:12:32.319Z',
-          keyFields: ['MemberKey']
+          keyFields: ['MemberKey'],
+          numExpandedRecordsFetched: 2000,
+          numUniqueRecordsFetched: 2000
         }
       ]
     }
