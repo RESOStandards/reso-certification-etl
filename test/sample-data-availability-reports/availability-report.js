@@ -168,6 +168,12 @@ const daReport = {
       fieldName: 'CustomLookupField123',
       lookupValue: 'NULL_VALUE',
       frequency: 9990
+    },
+    {
+      resourceName: 'Media',
+      fieldName: 'ResourceRecordKey',
+      frequency: 100,
+      parentResourceName: 'Property'
     }
   ]
 };
