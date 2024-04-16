@@ -111,6 +111,13 @@
       "lookupValue": "PENDING",
       "frequency": 10,
       "availability": 0.01
+    },
+    {
+      "resourceName": "Media",
+      "fieldName": "ResourceRecordKey",
+      "frequency": 100,
+      "parentResourceName": "Property",
+      "availability": 0.05
     }
   ],
   "resources": [
@@ -169,10 +176,10 @@
       "local": { "eqZero": 0, "gtZero": 2, "gte25": 2, "gte50": 2, "gte75": 0, "eq100": 0 }
     },
     "lookups": {
-      "total": { "eqZero": 0, "gtZero": 7, "gte25": 2, "gte50": 2, "gte75": 2, "eq100": 0 },
+      "total": { "eqZero": 0, "gtZero": 8, "gte25": 2, "gte50": 2, "gte75": 2, "eq100": 0 },
       "reso": { "eqZero": 0, "gtZero": 6, "gte25": 2, "gte50": 2, "gte75": 2, "eq100": 0 },
       "idx": { "eqZero": 0, "gtZero": 6, "gte25": 2, "gte50": 2, "gte75": 2, "eq100": 0 },
-      "local": { "eqZero": 0, "gtZero": 1, "gte25": 0, "gte50": 0, "gte75": 0, "eq100": 0 }
+      "local": { "eqZero": 0, "gtZero": 2, "gte25": 0, "gte50": 0, "gte75": 0, "eq100": 0 }
     },
     "resources": {
       "Office": {
@@ -196,10 +203,10 @@
               "idx": 0.625
             },
             "lookups": {
-              "total": 0,
+              "total": 0.05,
               "reso": 0,
               "idx": 0,
-              "local": 0
+              "local": 0.05
             }
           }
         }
@@ -286,7 +293,7 @@
             "lookups": {
               "total": {
                 "eqZero": 0,
-                "gtZero": 0,
+                "gtZero": 1,
                 "gte25": 0,
                 "gte50": 0,
                 "gte75": 0,
@@ -310,7 +317,7 @@
               },
               "local": {
                 "eqZero": 0,
-                "gtZero": 0,
+                "gtZero": 1,
                 "gte25": 0,
                 "gte50": 0,
                 "gte75": 0,
