@@ -1,6 +1,6 @@
 {
   "name": "@reso/reso-certification-etl",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "ETL Packages for RESO Certification",
   "main": "index.js",
   "scripts": {
@@ -18,6 +18,9 @@
     "node": ">=18.0.0"
   },
   "devDependencies": {
-    "mocha": "^10.0.0"
+    "mocha": "^10.0.0",
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.7.0",
+    "globals": "^15.8.0"
   }
 }
