@@ -1,13 +1,10 @@
-const {
-  processLookupResourceMetadata,
-  processLookupResourceMetadataFiles,
-} = require('./lib/process-lookup-resource-metadata');
+const { processLookupResourceMetadata, processLookupResourceMetadataFiles } = require('./lib/process-lookup-resource-metadata');
 
 const getReferenceMetadata = (version = '1.7') => {
   try {
     return require(`./lib/references/dd-${version}/metadata-report.json`);
   } catch (err) {
-    console.error(`Cannot load reference metadata for version '${version}'!`);
+    console.error(`Cannot load reference metadata for version '${version}'!. ${!!err ? `Error: ${err}` : ''}`);
     return null;
   }
 };
